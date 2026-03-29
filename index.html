@@ -1,230 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkele Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
+
 <body>
-    <header>
-        <div class = "container navbar">
-            <div class = "logo">Perkele <span>Esport</span></div>
-                <nav>
-                    <ul class = "nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#teams">Teams</a></li>
-                        <li><a href="#matches">Matches</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#sponsors">Sponsors</a></li>
-                        <li><a href="#join">Join</a></li>
-                    </ul>
-                </nav>
-        </div>
-    </header>
+    <div class="container">
+        <div id="tab1">
+            <a href="#tab1">LoL</a>
+            <section class="lol">
+                <form action="https://kdowd.yoobeestudent.net/form.php">
+                    <div class="content-wrapper">
 
-    <section class = "hero">
-        <div class = "container hero-content">
-            <div class = "eyebrow">Competitive Gaming Organization</div>
-            <h1>Compete with purpose.<br>Play like a champion</h1>
-            <p>
-                Perkele Esport is a competitive gaming organization focus on high level performance, teamwork, 
-                community, and building a strong identity across major esports tittles.
-            </p>
+                        <div class="form-row">
+                            <label>Your first Name</label>
+                            <input name="first_name" type="text" placeholder="First name" required>
+                        </div>
 
-            <div class = "hero-buttons">
-                <a href = "#matches" class = "btn btn-primary">Upcoming Matches</a>
-                <a href = "#join" class = "btn btn-outline">Join The Team</a>
-            </div>
+                        <div class="form-row">
+                            <label>Your last Name</label>
+                            <input name="last_name" type="text" placeholder="Last name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your phone number *Optional*</label>
+                            <input name="PhoneNum" type="text" placeholder="Ex 022 702 669">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your Email</label>
+                            <input name="email" type="email" placeholder="snorre@gmail.com" required>
+                        </div>
+
+                        <div class="gender">
+                            <Label>Gender
+                                <select name="gender" id="">
+                                    <option value="male">
+                                        Male
+                                    </option>
+
+                                    <option value="female">
+                                        Female
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+
+                            </Label>
+
+
+                        </div>
+
+
+                        <div>
+                            <h3>Your League of legends rank</h3>
+                            <div class="RankOpt">
+                                <label for="Iron">Iron</label>
+                                <input type="radio" name="rank" value="Iron">
+
+                                <label for="Iron">Brons</label>
+                                <input type="radio" name="rank" value="Brons">
+
+                                <label for="Silver">Silver</label>
+                                <input type="radio" name="rank" value="Silver">
+
+                                <label for="Gold">Gold</label>
+                                <input type="radio" name="rank" value="Gold">
+
+                                <label for="Platinum">Platinum</label>
+                                <input type="radio" name="rank" value="Platinum">
+
+                                <label for="Emerald">Emerald</label>
+                                <input type="radio" name="rank" value="Emerald">
+
+                                <label for="Diamond">Diamond</label>
+                                <input type="radio" name="rank" value="Diamond">
+
+                                <label for="Master">Master</label>
+                                <input type="radio" name="rank" value="Master">
+
+                                <label for="Grandmaster">Grandmaster</label>
+                                <input type="radio" name="rank" value="Grandmaster">
+
+
+                                <label for="Challenger">Challenger</label>
+                                <input type="radio" name="rank" value="Challenger">
+                            </div>
+                        </div>
+                        <div class="form-row submitButton">
+                            <input class="helvete" name="submitButton" value="Submit" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </section>
         </div>
+
+        <div id="tab2">
+            <a href="#tab2">CS2</a>
+            <section>
+                <form action="https://kdowd.yoobeestudent.net/form.php">
+                    <div class="content-wrapper">
+
+                        <div class="form-row">
+                            <label>Your first Name</label>
+                            <input name="first_name" type="text" placeholder="First name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your last Name</label>
+                            <input name="last_name" type="text" placeholder="Last name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your phone number *Optional*</label>
+                            <input name="PhoneNum" type="text" placeholder="Ex 022 702 669">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your Email</label>
+                            <input name="email" type="email" placeholder="snorre@gmail.com" required>
+                        </div>
+
+
+                        <div class="gender">
+                            <Label>Gender
+                                <select name="gender" id="">
+                                    <option value="male">
+                                        Male
+                                    </option>
+
+
+                                    <option value="female">
+                                        Female
+                                    </option>
+
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+
+                                </select>
+
+
+                            </Label>
+
+
+                        </div>
+
+
+                        <div>
+                            <h3>Your faceit rating</h3>
+                            <div class="RankOpt">
+                                <label for="1">1</label>
+                                <input type="radio" name="rank" value="1">
+
+                                <label for="2">2</label>
+                                <input type="radio" name="rank" value="2">
+
+                                <label for="3">3</label>
+                                <input type="radio" name="rank" value="3">
+
+                                <label for="4">4</label>
+                                <input type="radio" name="rank" value="4">
+
+                                <label for="5">5</label>
+                                <input type="radio" name="rank" value="5">
+
+                                <label for="6">6</label>
+                                <input type="radio" name="rank" value="6">
+
+                                <label for="7">7</label>
+                                <input type="radio" name="rank" value="7">
+
+                                <label for="8">8</label>
+                                <input type="radio" name="rank" value="8">
+
+
+                                <label for="9">9</label>
+                                <input type="radio" name="rank" value="9">
+
+
+                                <Label>10+ Elo
+                                    <select name="Elo" id="">
+                                        <option value="No">
+                                            Chose
+                                        </option>
+                                        <option value="2000-2300">
+                                            2000 - 2300 Elo
+                                        </option>
+
+
+                                        <option value="2300-2600">
+                                            2300-2600 Elo
+                                        </option>
+
+
+                                        <option value="2600-3000">
+                                            2600-3000 Elo
+                                        </option>
+
+
+                                        <option value="3000+">
+                                            3000+ Elo
+                                        </option>
+
+
+                                    </select>
+                                </Label>
+                            </div>
+
+                            <div class="form-row submitButton">
+                                <input class="helvete" name="submitButton" value="Submit" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div id="tab3">
+            <a href="#tab3">Val</a>
+            <section>
+                <form action="https://kdowd.yoobeestudent.net/form.php">
+                    <div class="content-wrapper">
+                        <div class="form-row">
+                            <label>Your first Name</label>
+                            <input name="first_name" type="text" placeholder="First name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your last Name</label>
+                            <input name="last_name" type="text" placeholder="Last name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your phone number *Optional*</label>
+                            <input name="PhoneNum" type="text" placeholder="Ex 022 702 669">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Your Email</label>
+                            <input name="email" type="email" placeholder="snorre@gmail.com" required>
+                        </div>
+
+
+                        <div class="gender">
+                            <Label>Gender
+                                <select name="gender" id="">
+                                    <option value="male">
+                                        Male
+                                    </option>
+
+
+                                    <option value="female">
+                                        Female
+                                    </option>
+
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+
+                                </select>
+
+
+                            </Label>
+                        </div>
+
+                        <div>
+                            <h3>Your Valorant rank</h3>
+                            <div class="RankOpt">
+                                <label for="Iron">Iron</label>
+                                <input type="radio" name="rank" value="Iron">
+
+                                <label for="Iron">Brons</label>
+                                <input type="radio" name="rank" value="Brons">
+
+                                <label for="Silver">Silver</label>
+                                <input type="radio" name="rank" value="Silver">
+
+                                <label for="Gold">Gold</label>
+                                <input type="radio" name="rank" value="Gold">
+
+                                <label for="Platinum">Platinum</label>
+                                <input type="radio" name="rank" value="Platinum">
+
+                                <label for="Emerald">Emerald</label>
+                                <input type="radio" name="rank" value="Emerald">
+
+                                <label for="Diamond">Diamond</label>
+                                <input type="radio" name="rank" value="Diamond">
+
+                                <label for="Acendant">Acendant</label>
+                                <input type="radio" name="rank" value="Acendant">
+
+                                <label for="immortal">immortal</label>
+                                <input type="radio" name="rank" value="immortal">
+
+                                <label for="radiant">radiant</label>
+                                <input type="radio" name="rank" value="radiant">
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-row submitButton">
+                            <input class="helvete" name="submitButton" value="Submit" type="submit">
+                        </div>
+                    </div>
+        </div>
+    </div>
+    </form>
     </section>
-
-    <section id = "about">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">About Us</div>
-                <h2>Built for competition</h2>
-            </div>
-
-            <div class = "about-grid">
-                <div class = "panel">
-                
-                <p>
-                    Perkele Esport is a modern esports organisation made for players,
-                creators, and fans who want more than just a team name. We focus on
-                strong teamwork, disciplined improvement, community presence, and
-                consistent results across multiple competitive games.
-                </p> 
-                </div>
-
-                <div class = "stats">
-                    <div class = "stat-box">
-                        <h3>3</h3>
-                        <p>Active Rosters</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>28</h3>
-                        <p>Player & Staff</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>14</h3>
-                        <p>Tournaments</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>9</h3>
-                        <p>Partner Brands</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id = "teams">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Rosters</div>
-                <h2>Our teams</h2>
-            </div>
-
-            <div class = "team-grid">
-                <div class = "card">
-                    <div class = "tag">Valorant</div>
-                    <h3>Precision & Pressure</h3>
-                    <p>Our Valorant roster is built around communication, smart decision making and consistency.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">League of Legends</div>
-                    <h3>Macro & Control</h3>
-                    <p>A disciplined lineup focused on strategic gameplay, coordinated plays, and objective focused gameplay.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">CS2</div>
-                    <h3>Aim & Structure</h3>
-                    <p>Fast reactions, sharp setups, and flawless execution that define our CS2 teams.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id = "matches">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Schedule</div>
-                <h2>Upcoming Matches</h2>
-            </div>
-
-            <table class = "match-table">
-                <thead>
-                    <tr>
-                        <th>Game</th>
-                        <th>Opponent</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Event</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Valorant</td>
-                        <td>Nova Core</td>
-                        <td>April 2</td>
-                        <td>7:00 PM</td>
-                        <td>Regional Series</td>
-                    </tr>
-
-                    <tr>
-                        <td>League of Legends</td>
-                        <td>Dragons Den</td>
-                        <td>April 5</td>
-                        <td>8:30 PM</td>
-                        <td>Rivals League</td>
-                    </tr>
-
-                    <tr>
-                        <td>CS2</td>
-                        <td>Steel Titans</td>
-                        <td>April 8</td>
-                        <td>6:00 PM</td>
-                        <td>Elite Cup</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id = "news">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Latest</div>
-                <h2>News & Updates</h2>
-            </div>
-
-            <div class = "news-grid">
-                <div class = "card">
-                    <div class = "tag">Announcement</div>
-                    <h3>New Roster Update</h3>
-                    <p>We've added new fresh talent to strengthen our competitive dept ahead for our next split.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">Results</div>
-                    <h3>Regional win secured</h3>
-                    <p>Perkele Esport takes a major victory with a dominant performance in the final bracket.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">Community</div>
-                    <h3>Tryouts Now Open</h3>
-                    <p>Applications are live for players who want to compete, improve, and represent the org</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id = "sponsors">
-            <div class = "container">
-                <div class = "section-header">
-                    <div class = "eyebrow">Partners</div>
-                    <h2>Sponsors</h2>
-                </div>
-
-                <div class = "sponsor-grid">
-                    <div class = "sponsor-card">
-                        <img src = "razer-ths-logo.svg" alt= "Razer">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src = "hyperxlogo_124x.svg" alt= "HyperX">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src= "redbullcom-logo_double-with-text.svg" alt= "RedBull">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src= "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt= "Mercedes" class = "mercedes-logo">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id = "join" class = "cta">
-        <div class = "container">
-            <div class = "eyebrow">Get Involved</div>
-            <h2>Join the organization</h2>
-            <p>Whether you're a player, content creator, staff member, or sponsor, there's always a place for you in Perkele Esport.</p>
-            <a href = "#" class ="btn btn-primary">Apply Now</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class = "container">
-            <p>&copy; 2026 Perkele Esport. All rights reserved.</p>
-            <p>Follow Us: Twitter | Instagram | Twitch</p>
-        </div>
-    </footer>
 </body>
+
 </html>

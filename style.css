@@ -1,334 +1,121 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+:root {
+  --tab-height-offset: 52px;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #050505;
-      color: #ffffff;
-    }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+body {
+  background-image: url("LoLmig.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
-    ul {
-      list-style: none;
-    }
+.container {
+background-image: url("RivalRed.png");
+min-width: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5, 5, 5, 0.95);
-      border-bottom: 1px solid #1b1b1b;
-    }
+.container a {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  justify-content:center;
+  border: 1px solid red;
+  margin-right: 4px;
+  padding: 6px;
+}
 
-     .navbar {
-      min-height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; 
-    }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+.container section {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.container div:target a {
+  background-color: grey;
+}
 
-    .logo span {
-      color: #e10600;
-    }
-      .nav-links {
-      display: flex;
-      gap: 28px;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
 
-    .nav-links a:hover {
-      color: #e10600;
-    }
+.container div:not(:target) section {
+  display: none;
+}
 
-    .hero {
-      min-height: 92vh;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.7)),
-        url("https://cdn.egamersworld.com/cdn-cgi/image/width=690,quality=100,format=webp/uploads/content/1/17/1769170210722_resized.jpg")
-        center/cover no-repeat;
-    }
 
-    .hero-content {
-      max-width: 700px;
-      padding: 80px 0;      
-    }
+a {
+  background-color: black;
+  color: snow;
+}
 
-    .eyebrow {
-      color: #e10600;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 18px;
-      font-weight: bold;
-    }
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-    .hero h1 {
-      font-size: 56px;
-      line-height: 1.05; 
-      text-transform: uppercase;
-      margin-bottom: 22px;
-      font-weight: 900;
-    }
-    
-     .hero p {
-      color: #cfcfcf;
-      font-size: 18px;
-      line-height: 1.8;
-      max-width: 600px;
-      margin-bottom: 32px;
-    }
+.form-row label {
+  width: 160px;
+  font-weight: bold;
+}
 
-    .hero-buttons {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+.form-row input,
+.form-row select {
+  width: 250px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #4a0000;
+  background-color: #1f0000; 
+  color: snow;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      border: 1px solid #e10600;
-      transition: 0.3s;
-      letter-spacing: 1px;
-    }
+select {
+  width: 60px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #4a0000;
+  background-color: #1a0000;
+  color: white;
+  appearance: none;
+  text-align: center;
+}
 
-    .btn-primary {
-      background: #e10600;  
-      color: #fff;
-    }
+.content-wrapper {
+  background: rgba(20, 20, 20, 0.75);
+  min-width: 100vw;
+  min-height: calc( 100vh - var(--tab-height-offset));
+  padding: 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  margin-top: 10px;
+}
 
-    .btn-primary:hover {
-      background: #b30000;
-      border-color: #b30000;
-    }
+.submitButton input {
+    background-color: #8b0000;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
 
-    .btn-outline {
-      background: transparent;
-      color: #fff;
-    }
+.submitButton {
+    padding: 20px;
+}
 
-    .btn-outline:hover {
-      background: #e10600;
-    }
+label {
+  color: white;
+}
 
-    section {
-      padding: 110px 0;
-    }
-
-    .section-header {
-      margin-bottom: 45px;
-    }
-
-    .section-header .eyebrow {
-      margin-bottom: 10px;
-    }
-
-    .section-header h2 {
-      font-size: 42px;
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 30px;
-    }
-
-    .panel {
-      font-size: 18px;
-      background: #0d0d0d;
-      border: 1px solid #1d1d1d;
-      padding: 32px;
-    }
-
-    .panel p {
-      color: #c7c7c7;
-      line-height: 1.9;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .stat-box {
-      background: #111111;
-      border: 1px solid #1f1f1f;
-      padding: 24px;
-      text-align: center;
-    }
-
-    .stat-box h3 {
-      font-size: 34px;
-      color: #e10600;
-      margin-bottom: 8px;
-    }
-
-    .stat-box p {
-      color: #bfbfbf;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .team-grid,
-    .news-grid,
-    .sponsor-grid {
-      display: grid;
-      gap: 22px;
-    }
-
-    .team-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .news-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .sponsor-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .card {
-      background: #0d0d0d;
-      border: 1px solid #1d1d1d;
-      padding: 28px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: #e10600;
-      box-shadow: 0 0 20px rgba(225, 6, 0, 0.3);
-    }
-
-    .card h3 {
-      font-size: 24px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-
-    .card p {
-      color: #c7c7c7;
-      line-height: 1.8;
-    }
-
-    .card .tag {
-      display: inline-block;
-      margin-bottom: 14px;
-      font-size: 12px;
-      color: #e10600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: bold;
-    }
-
-    .match-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #0d0d0d;
-      border: 1px solid #1d1d1d;
-    }
-
-    .match-table th,
-    .match-table td {
-      padding: 18px;
-      text-align: left;
-      border-bottom: 1px solid #1d1d1d;
-    }
-
-    .match-table th {
-      background: #111111;
-      color: #e10600;
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1px;
-    }
-
-    .match-table td {
-      color: #d4d4d4;
-    }
-
-    .sponsor-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 120px;
-      background: #0d0d0d;
-      border: 1px  solid #1d1d1d;
-    }
-
-    .sponsor-card img {
-      max-width: 120px;
-      height: auto;
-      filter: brightness(0.8);
-      transition: 0.3s;
-    }
-
-    .mercedes-logo {
-      filter: brightness(0) invert(1);
-    }
-
-    .sponsor-card:hover img {
-      filter: brightness(1);
-      transform: scale(1.1);
-    }
-
-    .cta {
-      text-align: center;
-      background: linear-gradient(180deg, #0b0b0b, #070707);
-      border-top: 1px solid #1b1b1b;
-      border-bottom: 1px solid #1b1b1b;
-    }
-
-    .cta h2 {
-      font-size: 44px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 28px;
-      color: #c7c7c7;
-      line-height: 1.9;
-    }
-
-    footer {
-      padding: 30px 0;
-      text-align: center;
-      color: #8f8f8f;
-      font-size: 14px;
-      background: #050505;
-    }
+h3 {
+  color: red;
+  
+}
