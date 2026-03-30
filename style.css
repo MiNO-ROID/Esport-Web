@@ -51,7 +51,8 @@
     .logo span {
       color: #e10600;
     }
-      .nav-links {
+
+    .nav-links {
       display: flex;
       gap: 28px;
       font-size: 14px;
