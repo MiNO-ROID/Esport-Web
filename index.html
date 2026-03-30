@@ -1,230 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkele Esport</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perkele Esport</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class = "container navbar">
-            <div class = "logo">Perkele <span>Esport</span></div>
-                <nav>
-                    <ul class = "nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#teams">Teams</a></li>
-                        <li><a href="#matches">Matches</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#sponsors">Sponsors</a></li>
-                        <li><a href="#join">Join</a></li>
-                    </ul>
-                </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo">Perkele <span>Esport</span></div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#matches">Matches</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-button" id="cartButton">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="eyebrow">Competitive Gaming Organization</div>
+      <h1>Compete with purpose.<br />Play like a champion</h1>
+      <p>
+        Perkele Esport is a competitive gaming organization focused on high level
+        performance, teamwork, community, and building a strong identity across
+        major esports titles.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#matches" class="btn btn-primary">Upcoming Matches</a>
+        <a href="#shop" class="btn btn-outline">Visit Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">About Us</div>
+        <h2>Built for competition</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="panel">
+          <p>
+            Perkele Esport is a modern esports organisation made for players,
+            creators, and fans who want more than just a team name. We focus on
+            strong teamwork, disciplined improvement, community presence, and
+            consistent results across multiple competitive games.
+          </p>
         </div>
-    </header>
 
-    <section class = "hero">
-        <div class = "container hero-content">
-            <div class = "eyebrow">Competitive Gaming Organization</div>
-            <h1>Compete with purpose.<br>Play like a champion</h1>
-            <p>
-                Perkele Esport is a competitive gaming organization focus on high level performance, teamwork, 
-                community, and building a strong identity across major esports tittles.
-            </p>
-
-            <div class = "hero-buttons">
-                <a href = "#matches" class = "btn btn-primary">Upcoming Matches</a>
-                <a href = "#join" class = "btn btn-outline">Join The Team</a>
-            </div>
+        <div class="stats">
+          <div class="stat-box">
+            <h3>3</h3>
+            <p>Active Rosters</p>
+          </div>
+          <div class="stat-box">
+            <h3>28</h3>
+            <p>Player & Staff</p>
+          </div>
+          <div class="stat-box">
+            <h3>14</h3>
+            <p>Tournaments</p>
+          </div>
+          <div class="stat-box">
+            <h3>9</h3>
+            <p>Partner Brands</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id = "about">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">About Us</div>
-                <h2>Built for competition</h2>
-            </div>
+  <section id="teams">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Rosters</div>
+        <h2>Our Teams</h2>
+      </div>
 
-            <div class = "about-grid">
-                <div class = "panel">
-                
-                <p>
-                    Perkele Esport is a modern esports organisation made for players,
-                creators, and fans who want more than just a team name. We focus on
-                strong teamwork, disciplined improvement, community presence, and
-                consistent results across multiple competitive games.
-                </p> 
-                </div>
-
-                <div class = "stats">
-                    <div class = "stat-box">
-                        <h3>3</h3>
-                        <p>Active Rosters</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>28</h3>
-                        <p>Player & Staff</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>14</h3>
-                        <p>Tournaments</p>
-                    </div>
-
-                    <div class = "stat-box">
-                        <h3>9</h3>
-                        <p>Partner Brands</p>
-                    </div>
-                </div>
-            </div>
+      <div class="team-grid">
+        <div class="card">
+          <div class="tag">Valorant</div>
+          <h3>Precision & Pressure</h3>
+          <p>
+            Our Valorant roster is built around communication, smart decision
+            making and consistency.
+          </p>
         </div>
-    </section>
 
-    <section id = "teams">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Rosters</div>
-                <h2>Our teams</h2>
-            </div>
-
-            <div class = "team-grid">
-                <div class = "card">
-                    <div class = "tag">Valorant</div>
-                    <h3>Precision & Pressure</h3>
-                    <p>Our Valorant roster is built around communication, smart decision making and consistency.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">League of Legends</div>
-                    <h3>Macro & Control</h3>
-                    <p>A disciplined lineup focused on strategic gameplay, coordinated plays, and objective focused gameplay.</p>
-                </div>
-
-                <div class = "card">
-                    <div class = "tag">CS2</div>
-                    <h3>Aim & Structure</h3>
-                    <p>Fast reactions, sharp setups, and flawless execution that define our CS2 teams.</p>
-                </div>
-            </div>
+        <div class="card">
+          <div class="tag">League of Legends</div>
+          <h3>Macro & Control</h3>
+          <p>
+            A disciplined lineup focused on strategic gameplay, coordinated
+            plays, and objective focused performance.
+          </p>
         </div>
-    </section>
 
-    <section id = "matches">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Schedule</div>
-                <h2>Upcoming Matches</h2>
-            </div>
-
-            <table class = "match-table">
-                <thead>
-                    <tr>
-                        <th>Game</th>
-                        <th>Opponent</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Event</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Valorant</td>
-                        <td>Nova Core</td>
-                        <td>April 2</td>
-                        <td>7:00 PM</td>
-                        <td>Rivals League</td>
-                    </tr>
-
-                    <tr>
-                        <td>League of Legends</td>
-                        <td>Dragons Den</td>
-                        <td>April 5</td>
-                        <td>8:30 PM</td>
-                        <td>Rivals League</td>
-                    </tr>
-
-                    <tr>
-                        <td>CS2</td>
-                        <td>Steel Titans</td>
-                        <td>April 8</td>
-                        <td>6:00 PM</td>
-                        <td>Rivals League</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="card">
+          <div class="tag">CS2</div>
+          <h3>Aim & Structure</h3>
+          <p>
+            Fast reactions, sharp setups, and flawless execution define our CS2
+            team identity.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id = "news">
-        <div class = "container">
-            <div class = "section-header">
-                <div class = "eyebrow">Latest</div>
-                <h2>News & Updates</h2>
-            </div>
+  <section id="matches">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Schedule</div>
+        <h2>Upcoming Matches</h2>
+      </div>
 
-            <div class = "news-grid">
-                <div class = "card">
-                    <div class = "tag">Announcement</div>
-                    <h3>New Roster Update</h3>
-                    <p>We've added new fresh talent to strengthen our competitive dept ahead for our next split.</p>
-                </div>
+      <div class="table-wrap">
+        <table class="match-table">
+          <thead>
+            <tr>
+              <th>Game</th>
+              <th>Opponent</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Valorant</td>
+              <td>Nova Core</td>
+              <td>April 2</td>
+              <td>7:00 PM</td>
+              <td>Rivals League</td>
+            </tr>
+            <tr>
+              <td>League of Legends</td>
+              <td>Dragons Den</td>
+              <td>April 5</td>
+              <td>8:30 PM</td>
+              <td>Rivals League</td>
+            </tr>
+            <tr>
+              <td>CS2</td>
+              <td>Steel Titans</td>
+              <td>April 8</td>
+              <td>6:00 PM</td>
+              <td>Rivals League</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-                <div class = "card">
-                    <div class = "tag">Results</div>
-                    <h3>Regional win secured</h3>
-                    <p>Perkele Esport takes a major victory with a dominant performance in the final bracket.</p>
-                </div>
+  <section id="news">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Latest</div>
+        <h2>News & Updates</h2>
+      </div>
 
-                <div class = "card">
-                    <div class = "tag">Community</div>
-                    <h3>Tryouts Now Open</h3>
-                    <p>Applications are live for players who want to compete, improve, and represent the org</p>
-                </div>
-            </div>
+      <div class="news-grid">
+        <div class="card">
+          <div class="tag">Announcement</div>
+          <h3>New Roster Update</h3>
+          <p>
+            We have added fresh talent to strengthen our competitive depth ahead
+            of the next split.
+          </p>
         </div>
-    </section>
 
-    <section id = "sponsors">
-            <div class = "container">
-                <div class = "section-header">
-                    <div class = "eyebrow">Partners</div>
-                    <h2>Sponsors</h2>
-                </div>
-
-                <div class = "sponsor-grid">
-                    <div class = "sponsor-card">
-                        <img src = "razer-ths-logo.svg" alt= "Razer">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src = "hyperxlogo_124x.svg" alt= "HyperX">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src= "redbullcom-logo_double-with-text.svg" alt= "RedBull">
-                    </div>
-                    <div class = "sponsor-card">
-                        <img src= "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt= "Mercedes" class = "mercedes-logo">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id = "join" class = "cta">
-        <div class = "container">
-            <div class = "eyebrow">Get Involved</div>
-            <h2>Join the organization</h2>
-            <p>Whether you're a player, content creator, staff member, or sponsor, there's always a place for you in Perkele Esport.</p>
-            <a href = "#" class ="btn btn-primary">Apply Now</a>
+        <div class="card">
+          <div class="tag">Results</div>
+          <h3>Regional Win Secured</h3>
+          <p>
+            Perkele Esport takes a major victory with a dominant performance in
+            the final bracket.
+          </p>
         </div>
-    </section>
 
-    <footer>
-        <div class = "container">
-            <p>&copy; 2026 Perkele Esport. All rights reserved.</p>
-            <p>Follow Us: Twitter | Instagram | Twitch</p>
+        <div class="card">
+          <div class="tag">Community</div>
+          <h3>Tryouts Now Open</h3>
+          <p>
+            Applications are now live for players who want to compete, improve,
+            and represent the org.
+          </p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Merch</div>
+        <h2>Official Shop</h2>
+      </div>
+
+      <div class="shop-grid">
+        <div class="shop-card">
+          <div class="product-image">Jersey</div>
+          <h3>Perkele Pro Jersey</h3>
+          <p>
+            Official team jersey built for comfort, style, and competitive identity.
+          </p>
+          <div class="product-bottom">
+            <div class="price">$49.99</div>
+            <button class="btn btn-primary add-to-cart"
+              data-name="Perkele Pro Jersey"
+              data-price="49.99">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="product-image">Hoodie</div>
+          <h3>Champions Hoodie</h3>
+          <p>
+            Heavyweight hoodie featuring Perkele Esport branding and team colors.
+          </p>
+          <div class="product-bottom">
+            <div class="price">$59.99</div>
+            <button class="btn btn-primary add-to-cart"
+              data-name="Champions Hoodie"
+              data-price="59.99">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="product-image">Cap</div>
+          <h3>Signature Cap</h3>
+          <p>
+            Classic black cap with embroidered logo for everyday wear and event days.
+          </p>
+          <div class="product-bottom">
+            <div class="price">$24.99</div>
+            <button class="btn btn-primary add-to-cart"
+              data-name="Signature Cap"
+              data-price="24.99">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <div class="product-image">Mousepad</div>
+          <h3>XL Gaming Mousepad</h3>
+          <p>
+            Large esports mousepad made for smooth tracking and durable performance.
+          </p>
+          <div class="product-bottom">
+            <div class="price">$29.99</div>
+            <button class="btn btn-primary add-to-cart"
+              data-name="XL Gaming Mousepad"
+              data-price="29.99">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Partners</div>
+        <h2>Sponsors</h2>
+      </div>
+
+      <div class="sponsor-grid">
+        <div class="sponsor-card">
+            <img src="razer-ths-logo.svg" alt="Razer"/>
+        </div>
+        <div class="sponsor-card">
+            <img src="hyperxlogo_124x.svg" alt="HyperX"/>
+        </div>
+        <div class="sponsor-card">
+            <img src="redbullcom-logo_double-with-text.svg" alt="Redbull"/>
+        </div>
+        <div class="sponsor-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="cta">
+    <div class="container">
+      <div class="eyebrow">Get Involved</div>
+      <h2>Join the organization</h2>
+      <p>
+        Whether you're a player, content creator, staff member, or sponsor,
+        there is always a place for you in Perkele Esport.
+      </p>
+      <a href="#join" class="btn btn-primary">Apply Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Perkele Esport. All rights reserved.</p>
+      <p>Follow Us: Twitter | Instagram | Twitch</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCart">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Total</span>
+        <strong>$<span id="cartTotal">0.00</span></strong>
+      </div>
+      <button class="btn btn-primary checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="cart.js"></script>
 </body>
 </html>
