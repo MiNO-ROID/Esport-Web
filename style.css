@@ -448,6 +448,30 @@ footer p + p {
   transition: transform 0.3s ease;
 }
 
+.hide-cart {
+  transform: translateX(100%);
+}
+
+.cart-footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.checkout-btn {
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.checkout-btn:hover {
+  background: var(--accent-dark);
+}
+
 .cart-item {
   padding: 12px;
   border: 1px solid var(--border);
