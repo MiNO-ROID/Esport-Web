@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+            background-color: #f0f0f0;
+        }
+        .cart {
+        width: 320px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        border-right: 1px solid #ddd;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+        }
+
+        .hide-cart {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .item {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .add {
+            background: #4caf50;
+            color: white;
+        }
+
+        .remove {
+            background: #f44336;
+            color: white;
+        }
+
+        .close {
+            color: #333;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: #f44336;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .purchase {
+            margin-top: auto;
+            margin-bottom: 20px;
+            background: #2196f3;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            font-size: 12px;
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Website</h1>
+    <div class = "cart" id = "cart">
+        <h2>Shopping Cart</h2>
+        <div class="wrapper">
+            <h3>Gaming Mouse</h3>
+            <p>Price: $50</p>
+            <p>Quantity: 1</p>
+            <div class = "buttons">
+                <button class = "add">Add</button>
+                <button class = "remove">Remove</button>
+                <a href = "#" class = "close" id = "close-cart">x</a>
+            </div>
+        </div>
+        
+        <button class = "purchase">Purchase</button>
+    </div>
+
+    <script>
+        const cart = document.getElementById("cart");
+        const closeCart = document.getElementById("close-cart");
+
+        closeCart.addEventListener("click", function(e) {
+            cart.classList.add("hide-cart");
+        });
+    </script>
+</body>
+</html>
+
