@@ -516,6 +516,10 @@ footer p + p {
   cursor: pointer;
 }
 
+.seb-gender {
+  padding-left: 10px;
+}
+
 .seb-container {
   background-image: url("RivalRed.png");
   min-width: 100vh;
@@ -569,6 +573,7 @@ a {
 .seb-form-row label {
   width: 160px;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .seb-form-row input,
@@ -600,6 +605,29 @@ select {
   min-height: fit-content;
   margin-top: 10px;
   padding-bottom: 110px;
+  padding-top: 10px;
+}
+
+.seb-content-wrapper-emp {
+  background: rgba(20, 20, 20, 0.75);
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  min-width: fit-content;
+  min-height: fit-content;
+  margin-top: 10px;
+  padding-bottom: 122px;
+  padding-top: 10px;
+
+}
+
+.seb-content-wrapper-spo {
+  background: rgba(20, 20, 20, 0.75);
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  min-width: fit-content;
+  min-height: fit-content;
+  margin-top: 10px;
+  padding-bottom: 165px;
   padding-top: 10px;
 }
 
@@ -648,12 +676,14 @@ h1 {
   color: white;
   font-size: 20px;
   font-family: monospace;
+  padding-left: 10px;
 }
 
 .seb-dmy {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  padding-left: 10px;
 }
 
 .seb-dmy input,
@@ -678,6 +708,12 @@ h1 {
   flex-direction: column;
 }
 
+.seb-h3 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
 p {
   color: white;
 }
@@ -694,8 +730,12 @@ p {
   padding:0;
 }
 
+.seb-logo {
+  padding-left: 10px;
+}
+
 .seb-lolrank {
-  min-width: max-content;
+  max-width: 300px;
 }
 
 .seb-formsec {
@@ -714,4 +754,12 @@ p {
   background: linear-gradient(135deg, #151515, #0a0a0a);
   object-fit: cover;
   display: block;
+}
+
+.seb-RankOpt {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  max-width: 140px;
+  padding-left: 10px;
 }
